@@ -63,7 +63,7 @@ pip install -r requirements.txt
 
 ```tree
 ├── Annotation.csv                              ## Kind of metadata for annotations per patient ID
-├── Encoded Classes.txt                         ## Original 23 classes including normal, non-beat and abnormal classes
+├── Encoded Classes.txt                         ## Original 23 classes including normal, non-beat and abnormal classes (symbol → label)
 ├── Features.npy                                ## Processed Features
 ├── History.csv                                 ## Training history data
 ├── Labels (Mutli Class).npy                    ## Processed Labels (0 to 13)
@@ -93,8 +93,8 @@ pip install -r requirements.txt
 │   ├── Confusion Matrix.png
 │   └── Loss Graphs.png
 ├── README.md
-├── Remapped_Symbol_Classes.txt
-├── mitdb
+├── Remapped_Symbol_Classes.txt                 ## Processed labels (symbol → label)
+├── mitdb                                       ## Main dataset
 │   ├── 100.atr
 │   ├── 100.dat
 │   ├── 100.hea
