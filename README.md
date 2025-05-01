@@ -59,6 +59,7 @@ cd project-name
 pip install -r requirements.txt
 ```
 
+## 📁 Project Structure
 
 ```tree
 ├── Annotation.csv
