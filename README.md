@@ -51,12 +51,59 @@ It's intended for:
 ---
 
 ## ⚙️ Installation
-Ppre
 Clone the repository and install dependencies:
 
 ```bash
 git clone https://github.com/yourusername/project-name.git
 cd project-name
 pip install -r requirements.txt
+```
 
 
+```tree
+├── Annotation.csv
+├── Encoded Classes.txt                         ## Original 23 classes including normal, non-beat and abnormal classes
+├── Features.npy
+├── History.csv                                 ## Training history data
+├── Labels (Mutli Class).npy
+├── Model                                       ## Saved model as tf format
+│   ├── assets
+│   ├── keras_metadata.pb
+│   ├── saved_model.pb
+│   └── variables
+│       ├── variables.data-00000-of-00001
+│       └── variables.index
+├── Models                                      ## Models saved as .h5 and .keras formats
+│   ├── Model.h5
+│   └── Model.keras
+├── Notebook PDFs                               ## Saved the Jupyter Notebooks as PDFs for future reference
+│   ├── Data PP.pdf
+│   ├── Inference.pdf
+│   ├── Plots.pdf
+│   └── Training (Multi Class).pdf
+├── Notebooks
+│   ├── Data PP.ipynb                           ## Data Preprocessing
+│   ├── Inference.ipynb                         ## Inference on unseen data
+│   ├── Plots.ipynb                             ## Evaluation and metrics
+│   └── Training (Multi Class).ipynb            ## Training
+├── Plots
+│   ├── Accuracy Graphs.png
+│   ├── Combined Graphs.png
+│   ├── Confusion Matrix.png
+│   └── Loss Graphs.png
+├── README.md
+├── Remapped_Symbol_Classes.txt
+├── mitdb
+│   ├── 100.atr
+│   ├── 100.dat
+│   ├── 100.hea
+│   ├── 101.atr
+│   ├── 101.dat
+│   ├── 101.hea
+│   ├── 102.atr
+│   ├── 102.dat
+│   ├── 102.hea	
+│   ├── ...
+│   ├── ...
+│   ├── ...
+```

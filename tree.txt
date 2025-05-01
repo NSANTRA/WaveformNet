@@ -1,0 +1,53 @@
+├── Annotation.csv
+├── Encoded Classes.txt
+├── Features.npy
+├── History.csv
+├── Labels (Mutli Class).npy
+├── Model
+│   ├── assets
+│   ├── keras_metadata.pb
+│   ├── saved_model.pb
+│   └── variables
+│       ├── variables.data-00000-of-00001
+│       └── variables.index
+├── Models
+│   ├── Model.h5
+│   └── Model.keras
+├── Notebook PDFs
+│   ├── Data PP.pdf
+│   ├── Inference.pdf
+│   ├── Plots.pdf
+│   └── Training (Multi Class).pdf
+├── Notebooks
+│   ├── .ipynb_checkpoints
+│   │   ├── Data PP-checkpoint.ipynb
+│   │   ├── Inference-checkpoint.ipynb
+│   │   ├── Plots-checkpoint.ipynb
+│   │   ├── Training (Multi Class)-checkpoint.ipynb
+│   │   └── Training-checkpoint.ipynb
+│   ├── Data PP.ipynb
+│   ├── Inference.ipynb
+│   ├── Plots.ipynb
+│   └── Training (Multi Class).ipynb
+├── Plots
+│   ├── .ipynb_checkpoints
+│   │   └── Graphs-checkpoint.png
+│   ├── Accuracy Graphs.png
+│   ├── Combined Graphs.png
+│   ├── Confusion Matrix.png
+│   └── Loss Graphs.png
+├── README.md
+├── Remapped_Symbol_Classes.txt
+├── mitdb
+│   ├── 100.atr
+│   ├── 100.dat
+│   ├── 100.hea
+│   ├── 101.atr
+│   ├── 101.dat
+│   ├── 101.hea
+│   ├── 102.atr
+│   ├── 102.dat
+│   ├── 102.hea	
+│   ├── ...
+│   ├── ...
+│   ├── ...
