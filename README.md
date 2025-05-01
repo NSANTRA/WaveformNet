@@ -62,19 +62,19 @@ pip install -r requirements.txt
 ## 📁 Project Structure
 
 ```tree
-├── Annotation.csv
+├── Annotation.csv                              ## Kind of metadata for annotations per patient ID
 ├── Encoded Classes.txt                         ## Original 23 classes including normal, non-beat and abnormal classes
-├── Features.npy
+├── Features.npy                                ## Processed Features
 ├── History.csv                                 ## Training history data
-├── Labels (Mutli Class).npy
-├── Model                                       ## Saved model as tf format
+├── Labels (Mutli Class).npy                    ## Processed Labels (0 to 13)
+├── Model                                       ## Saved model as tf format for quantization (future goal)
 │   ├── assets
 │   ├── keras_metadata.pb
 │   ├── saved_model.pb
 │   └── variables
 │       ├── variables.data-00000-of-00001
 │       └── variables.index
-├── Models                                      ## Models saved as .h5 and .keras formats
+├── Models                                      ## Models saved as .h5 (legacy) and .keras formats
 │   ├── Model.h5
 │   └── Model.keras
 ├── Notebook PDFs                               ## Saved the Jupyter Notebooks as PDFs for future reference
