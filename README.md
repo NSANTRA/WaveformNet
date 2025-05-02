@@ -7,7 +7,7 @@
 ## 📖 Table of Contents
 - [Project Description](#-project-description)
 - [Features](#-features)
-- [Installation](#️-installation--prerequisites)
+- [Installation & Prerequisites](#️-installation--prerequisites)
 - [Project Structure](#-project-structure)
 - [Dataset](#-dataset)
 - [Results](#-results)
