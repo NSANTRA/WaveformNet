@@ -75,7 +75,7 @@ You can use the WFDB Python package to download the MIT-BIH dataset:
 import wfdb
 wfdb.dl_database("mitdb", dl_dir = "mitdb")
 ```
-Or download manually from [PhysioNet](#dataset) and place it in a mitdb/ directory inside the project root.
+Or download manually from [PhysioNet](#-dataset) and place it in a mitdb/ directory inside the project root.
 
 ---
 
