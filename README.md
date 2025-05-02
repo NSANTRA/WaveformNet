@@ -8,7 +8,6 @@
 - [Project Description](#-project-description)
 - [Features](#-features)
 - [Installation](#️-installation--prerequisites)
-- [Usage](#-usage)
 - [Project Structure](#-project-structure)
 - [Dataset](#-dataset)
 - [Results](#-results)
