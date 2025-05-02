@@ -5,16 +5,13 @@
 ---
 
 ## 📖 Table of Contents
-- [Project Description](#description)
+- [Project Description](#project-description)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
-- [Dataset (if applicable)](#dataset)
+- [Dataset](#dataset)
 - [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
-- [References](#references)
 
 ---
 
@@ -48,6 +45,7 @@ It's intended for:
 3. **End-to-End Deep Learning Pipeline**: Includes preprocessing, model training, evaluation, and inference.
 
 4. **Educational Purpose**: Developed as a foundational project in a broader journey toward AI/ML engineering.
+
 ---
 
 ## ⚙️ Installation
@@ -58,6 +56,7 @@ git clone https://github.com/yourusername/project-name.git
 cd project-name
 pip install -r requirements.txt
 ```
+---
 
 ## 📁 Project Structure
 
@@ -67,7 +66,7 @@ pip install -r requirements.txt
 ├── Features.npy                                ## Processed Features
 ├── History.csv                                 ## Training history data
 ├── Labels (Mutli Class).npy                    ## Processed Labels (0 to 13)
-├── Model                                       ## Saved model as tf format for quantization (future goal)
+├── Model                                       ## Saved model as tf format for quantization purposes (future goal)
 │   ├── assets
 │   ├── keras_metadata.pb
 │   ├── saved_model.pb
