@@ -5,13 +5,13 @@
 ---
 
 ## 📖 Table of Contents
-- [Project Description](#project-description)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Dataset](#dataset)
-- [Results](#results)
+- [Project Description](#-project-description)
+- [Features](#-features)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Project Structure](#-project-structure)
+- [Dataset](#-dataset)
+- [Results](#-results)
 
 ---
 
