@@ -126,8 +126,43 @@ MIT-BIH Arrhythmia Database — [PhysioNet](https://physionet.org/content/mitdb/
 
 ---
 
-## Results
+## 📈 Results
 
-![Accuracy Graph](Plots/Accuracy%20Graphs.png)
+### Training & Validation Metrics
+The model was trained for 50 epochs on the MIT-BIH Arrhythmia Dataset. The following plots demonstrate the model's performance:
+
+#### Training vs Validation Loss
+
+The training and validation loss curves steadily decrease and converge, indicating proper learning and no signs of overfitting.
+
+Final validation loss stabilizes near zero.
+
+![Loss Graph](Plots/Loss%20Graphs.png)
+
+#### Training vs Validation Accuracy
+
+The model achieves over 98% validation accuracy, demonstrating strong generalization capability.
+
+Accuracy plateaued after ~30 epochs, suggesting optimal convergence.
+
+![Loss Graph](Plots/Accuracy%20Graphs.png)
+
+#### Combined Accuracy & Loss Overview
+
+This side-by-side visualization offers a comprehensive look at the tradeoff between accuracy and loss.
+
+Both metrics indicate consistent improvement during training.
+
+![Loss Graph](Plots/Combined%20Graphs.png)
+
+#### Confusion Matrix
+
+The confusion matrix shows strong classification performance across most classes.
+
+Diagonal dominance indicates accurate predictions.
+
+Some minor misclassifications are present in adjacent classes, which is common in ECG signal tasks.
+
+![Loss Graph](Plots/Confusion%20Matrix.png)
 
 ---
