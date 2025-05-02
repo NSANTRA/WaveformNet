@@ -48,14 +48,35 @@ It's intended for:
 
 ---
 
-## ⚙️ Installation
-Clone the repository and install dependencies:
+## ⚙️ Installation & Prerequisites
+### Prerequisites
+Ensure you have the following installed:
 
+- Python == 3.10.13
+- pip == 24.2
+- MIT-BIH Arrhythmia Dataset (can be downloaded via WFDB or manually)
+- Git (optional for cloning)
+
+Recommended Python Packages
 ```bash
-git clone https://github.com/yourusername/project-name.git
-cd project-name
-pip install -r requirements.txt
+pip install numpy pandas matplotlib seaborn scikit-learn wfdb tensorflow
 ```
+
+Clone the Repository
+```bash
+git clone https://github.com/NSANTRA/WaveformNet-Arrhythmia-Classification.git
+cd WaveformNet-Arrhythmia-Classification
+```
+
+📂 Dataset Setup
+You can use the WFDB Python package to download the MIT-BIH dataset:
+
+```python
+import wfdb
+wfdb.dl_database("mitdb", dl_dir = "mitdb")
+```
+Or download manually from [PhysioNet](#dataset) and place it in a mitdb/ directory inside the project root.
+
 ---
 
 ## 📁 Project Structure
