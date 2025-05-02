@@ -107,3 +107,27 @@ pip install -r requirements.txt
 │   ├── ...
 │   ├── ...
 ```
+
+---
+
+## 🧬 Dataset
+
+### MIT-BIH Arrhythmia Database (MITDB)
+The **MIT-BIH Arrhythmia Database** is a widely used benchmark dataset in biomedical signal processing, particularly for developing and evaluating algorithms for automated ECG (electrocardiogram) analysis. It consists of 48 half-hour excerpts of two-channel ambulatory ECG recordings, collected from 47 subjects by the Beth Israel Hospital Arrhythmia Laboratory between 1975 and 1979. Each record includes manually annotated beat and rhythm labels verified by independent experts.
+
+MITDB serves as a gold standard for tasks such as heartbeat classification, arrhythmia detection, and ECG signal segmentation.
+
+- **Format:** PhysioBank-compatible .dat, .hea, and .atr files.
+- **Sampling Frequency:** 360 Hz
+- **Annotations:** Beat types and rhythms using AAMI EC57 standard labels
+
+Official Source:
+MIT-BIH Arrhythmia Database — [PhysioNet](https://physionet.org/content/mitdb/1.0.0/)
+
+---
+
+## Results
+
+![Accuracy Graph](Plots/Accuracy%20Graphs.png)
+
+---
