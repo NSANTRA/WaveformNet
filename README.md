@@ -238,6 +238,6 @@ The confusion matrix further supports high performance:
 - Minor misclassifications appear primarily between adjacent or morphologically similar heartbeat types — an expected challenge in ECG signal classification.
 - Overall class-wise predictions are highly reliable, even in less represented categories.
 
-![COnfusion Matrix](Plots/2D/Confusion%20Matrix%202D.png)
+![Confusion Matrix](Plots/2D/Confusion%20Matrix%202D.png)
 
 ---
