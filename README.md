@@ -1,6 +1,6 @@
-# 📌 WaveformNet: A 1D CNN-Based Model for Multiclass Arrhythmia Classification
+# 📌 WaveformNet: 1D and 2D CNN-Based Models for Multiclass Arrhythmia Classification
 
-**WaveformNet** is a deep learning model built using one-dimensional convolutional neural networks (1D CNNs) to classify ECG signals into multiple arrhythmia types. Designed for efficiency and accuracy, the model analyzes raw ECG waveforms to detect abnormal heart rhythms, supporting multiclass classification modes. It serves as a foundational step toward intelligent cardiac monitoring and AI-driven healthcare solutions.
+WaveformNet is a deep learning project for classifying electrocardiogram (ECG) signals into multiple arrhythmia types using convolutional neural networks. It features two separately trained models: a one-dimensional (1D) CNN that processes raw ECG time series, and a two-dimensional (2D) CNN that operates on transformed representations. Developed on the same dataset, the models enable a comparative study of temporal vs. spatiotemporal feature extraction for multiclass arrhythmia classification, advancing research in AI-powered cardiac diagnostics.
 
 ---
 
@@ -16,35 +16,40 @@
 
 ## 🔍 Project Description
 
-**WaveformNet** is a 1D CNN-based deep learning model for classifying ECG signals into multiple arrhythmia types. It supports both multiclass classification (14 heartbeat categories) and binary classification to distinguish between normal and abnormal rhythms.
+**WaveformNet** is a deep learning project that includes two models: a 1D CNN-based model and a 2D CNN-based model, both designed to classify ECG signals into multiple arrhythmia types. The project supports multiclass classification (14 heartbeat categories) and binary classification to differentiate between normal and abnormal rhythms.
 
-For binary classification, a simple logic is applied:
+For binary classification, the logic is simple:
 
-If the predicted class is 6 ('N'), the beat is labeled 'Normal'; otherwise, it's 'Abnormal'.
+If the predicted class is 6 ('N'), the beat is labeled as 'Normal'; otherwise, it is labeled as 'Abnormal'.
 
-This project was developed as part of my AI/ML learning journey, aiming to gain hands-on experience in biomedical signal processing, deep learning model design, and real-world problem-solving. While not a production-ready system, it lays the groundwork for future projects in healthtech and machine learning.
+Both models were trained on the same dataset:
 
-It's intended for:
+- The 1D model processes raw ECG signals as time series data.
+- The 2D model operates on transformed representations (e.g., spectrograms or scalograms), allowing for spatiotemporal feature extraction.
 
-- Learners and developers exploring deep learning in healthcare
-- Those interested in ECG signal classification
-- Anyone looking for a practical example of CNNs applied to time-series biomedical data.
+This project was developed as part of my AI/ML learning journey, providing hands-on experience in biomedical signal processing, deep learning model design, and real-world problem-solving. While not a production-ready system, it lays the groundwork for future healthtech and machine learning projects.
+
+Intended for:
+- Learners and developers interested in deep learning applications in healthcare.
+
+- Researchers or practitioners focusing on ECG signal classification.
+
+- Anyone seeking a practical example of CNNs applied to time-series biomedical data.
 
 ---
 
 ## ✨ Features
 
-1. **Multiclass ECG Classification**: Classifies ECG signals into 14 distinct heartbeat types using a 1D CNN architecture.
+1. **Multiclass ECG Classification**: Classifies ECG signals into 14 distinct heartbeat types using a 1D CNN and a 2D CNN architecture.
 
-2. **Binary Classification Mode**: Distinguishes between normal ('N') and abnormal beats using a simple ternary condition:
+2. **Binary Classification Mode**: Differentiates between normal ('N') and abnormal beats using a simple ternary condition:
 ```python
 'Normal' if idx == 6 else 'Abnormal'.
 ```
 
 3. **End-to-End Deep Learning Pipeline**: Includes preprocessing, model training, evaluation, and inference.
 
-4. **Educational Purpose**: Developed as a foundational project in a broader journey toward AI/ML engineering.
-
+4. **Educational Purpose**: Developed as a foundational project in a broader AI/ML engineering journey to gain hands-on experience in biomedical signal processing.
 ---
 
 ## ⚙️ Installation & Prerequisites
@@ -172,31 +177,67 @@ MIT-BIH Arrhythmia Database — [PhysioNet](https://physionet.org/content/mitdb/
 
 ## 📈 Results
 
-### Training & Validation Metrics
+### Training & Validation Metrics (1D)
 The model was trained for 50 epochs on the MIT-BIH Arrhythmia Dataset. The following plots demonstrate the model's performance:
 
 #### Training vs Validation Loss
+- The training and validation loss curves steadily decrease and converge, indicating proper learning and no signs of overfitting. Final validation loss stabilizes near zero.
 
-The training and validation loss curves steadily decrease and converge, indicating proper learning and no signs of overfitting. Final validation loss stabilizes near zero.
-
-![Loss Graph](Plots/Loss%20Graphs.png)
+![Loss Graph](Plots/1D/Loss%20Graphs%201D.png)
 
 #### Training vs Validation Accuracy
+- The model achieves over 98% validation accuracy, demonstrating strong generalization capability.
+- Accuracy plateaued after ~30 epochs, suggesting optimal convergence.
 
-The model achieves over 98% validation accuracy, demonstrating strong generalization capability. Accuracy plateaued after ~30 epochs, suggesting optimal convergence.
-
-![Loss Graph](Plots/Accuracy%20Graphs.png)
+![Accuracy Graph](Plots/1D/Accuracy%20Graphs%201D.png)
 
 #### Combined Accuracy & Loss Overview
+- This side-by-side visualization offers a comprehensive look at the tradeoff between accuracy and loss. Both metrics indicate consistent improvement during training.
 
-This side-by-side visualization offers a comprehensive look at the tradeoff between accuracy and loss. Both metrics indicate consistent improvement during training.
-
-![Loss Graph](Plots/Combined%20Graphs.png)
+![Combined Graph](Plots/1D/Combined%20Graphs%201D.png)
 
 #### Confusion Matrix
+- The confusion matrix shows strong classification performance across most classes. Diagonal dominance indicates accurate predictions.
+- Some minor misclassifications are present in adjacent classes, which is common in ECG signal tasks.
 
-The confusion matrix shows strong classification performance across most classes. Diagonal dominance indicates accurate predictions. Some minor misclassifications are present in adjacent classes, which is common in ECG signal tasks.
+![Confusion Matrix](Plots/1D/Confusion%20Matrix%201D.png)
 
-![Loss Graph](Plots/Confusion%20Matrix.png)
+***
+
+### Training & Validation Metrics (2D)
+The models were trained for 50 epochs on the MIT-BIH Arrhythmia Dataset, and the performance metrics reflect strong generalization and learning behavior.
+
+#### Training vs Validation Loss
+- The loss curves for both training and validation datasets indicate smooth and effective convergence.
+- Training loss steadily decreases and approaches zero.
+- Validation loss remains consistently low throughout training, with no major spikes — a strong indicator of minimal overfitting.
+
+The model demonstrates excellent optimization stability.
+
+![Loss Graph](Plots/2D/Loss%20Graphs%202D.png)
+
+#### Training vs Validation Accuracy
+Accuracy trends confirm robust learning:
+- Training accuracy reaches ~99.7%, and validation accuracy maintains above 98.9%.
+- Both curves plateau after around 30 epochs, indicating early convergence and model generalization.
+- The narrow gap between training and validation accuracy suggests balanced performance without overfitting.
+
+![Accuracy Graph](Plots/2D/Accuracy%20Graphs%202D.png)
+
+#### Combined Accuracy & Loss Overview
+This dual-pane visualization presents a clear overview:
+- Consistent improvement in accuracy across epochs.
+- Parallel reduction in loss values, reflecting strong correlation between optimization and classification performance.
+- Highlights the model’s ability to learn complex ECG patterns efficiently.
+
+![Combined Graph](Plots/2D/Combined%20Graphs%202D.png)
+
+#### Confusion Matrix
+The confusion matrix further supports high performance:
+- Strong diagonal dominance indicates high precision and recall across most classes.
+- Minor misclassifications appear primarily between adjacent or morphologically similar heartbeat types — an expected challenge in ECG signal classification.
+- Overall class-wise predictions are highly reliable, even in less represented categories.
+
+![COnfusion Matrix](Plots/2D/Confusion%20Matrix%202D.png)
 
 ---
