@@ -405,7 +405,6 @@ WaveformNet/
 <!-- License -->
 <a id="license"></a>
 [![LICENSE](https://readme-typing-svg.herokuapp.com?font=JetBrainsMono+Nerd+Font&letterSpacing=0.3rem&pause=1000&width=400&lines=LICENSE)](https://git.io/typing-svg)
-
 MIT License
 
 Copyright (c) 2025 Neelotpal Santra
